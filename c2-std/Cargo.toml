@@ -1,0 +1,30 @@
+[package]
+name = "c2-std"
+version = "0.1.0"
+authors = ["Aleksey Sidorov <sauron1987@gmail.com>"]
+edition = "2021"
+resolver = "2"
+
+[profile.release]
+opt-level = "s"
+
+[profile.dev]
+debug = true # Symbols are nice and they don't increase the size on Flash
+opt-level = "z"
+
+[features]
+pio = ["esp-idf-sys/pio"]
+
+[dependencies]
+anyhow = "1.0"
+embedded-hal = "1.0.0-alpha.9"
+embedded-svc = "0.23"
+esp-idf-hal = "0.39"
+esp-idf-svc = "0.43"
+esp-idf-sys = { version = "0.31.9", features = ["binstart"] }
+heapless = { version = "0.7.16" }
+log = "0.4"
+
+[build-dependencies]
+embuild = "0.30.4"
+anyhow = "1"
