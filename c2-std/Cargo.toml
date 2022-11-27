@@ -17,13 +17,14 @@ pio = ["esp-idf-sys/pio"]
 
 [dependencies]
 anyhow = "1.0"
-embedded-hal = "1.0.0-alpha.9"
 embedded-svc = "0.23"
 esp-idf-hal = "0.39"
 esp-idf-svc = "0.43"
 esp-idf-sys = { version = "0.31.9", features = ["binstart"] }
 heapless = { version = "0.7.16" }
 log = "0.4"
+smart-leds = "0.3"
+ws2812-esp32-rmt-driver =  "0.4"
 
 [build-dependencies]
 embuild = "0.30.4"

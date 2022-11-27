@@ -20,7 +20,7 @@ runner = "espflash flash --monitor"
 
 [target.riscv32imc-esp-espidf]
 linker = "ldproxy"
-runner = "espflash flash --monitor --port /dev/cu.usbserial-1110"
+runner = "espflash flash --monitor --port /dev/cu.usbserial-2110"
 
 # Future - necessary for the experimental "native build" of esp-idf-sys with ESP32C3
 # See also https://github.com/ivmarkov/embuild/issues/16
